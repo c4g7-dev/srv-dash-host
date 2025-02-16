@@ -1,0 +1,10 @@
+.jqTCDz:not([type="checkbox"]):not([type="radio"]) {
+  background: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: var(--pageSecondaryActive) !important;
+  border: none !important;
+  width: 200px !important; /* Adjust the width to make it thinner */
+  border-radius: 4px !important; /* Less rounded corners */
+  text-align: right !important; /* Align content to the right */
+  padding: 8px !important; /* Adjust padding if needed */
+}
