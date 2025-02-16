@@ -1,12 +1,35 @@
-.jqTCDz:not([type="checkbox"]):not([type="radio"]) {
-  background: none !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  background-color: var(--pageSecondaryActive) !important;
-  border: none !important;
-  width: 200px !important; /* Adjust the width to make it thinner */
-  border-radius: 4px !important; /* Less rounded corners */
-  padding: 8px !important; /* Adjust padding if needed */
-  margin-left: auto !important; /* Align the search bar to the right */
-  margin-right: 0 !important; /* Ensure it stays aligned to the right */
-  display: block !important; /* Ensure it behaves like a block element for alignment */
+/* Align buttons to the right on mobile view */
+@media (max-width: 768px) {
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure buttons wrap on mobile */
+  }
+
+  .button-container .button {
+    margin: 5px;
+    height: 40px; /* Set the height of the buttons */
+  }
+
+  .pull-button {
+    height: 40px; /* Make sure pull button is the same height as the others */
+    width: auto; /* Avoid it being stretched */
+  }
+
+  /* Search bar adjustments */
+  .jqTCDz:not([type="checkbox"]):not([type="radio"]) {
+    background: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: var(--pageSecondaryActive) !important;
+    border: none !important;
+    width: 100% !important; /* Make search bar full width */
+    height: 40px !important; /* Match the height of the buttons */
+    border-radius: 4px !important; /* Slightly rounded corners */
+    padding: 8px !important; /* Adjust padding for the search bar */
+    margin-left: auto !important; /* Align search bar to the right */
+    margin-right: 0 !important; /* Ensure no space on the right */
+    display: block !important; /* Make it block-level to respect alignment */
+    text-align: left !important; /* Keep text aligned left */
+  }
 }
