@@ -5,6 +5,8 @@
   border: none !important;
   width: 200px !important; /* Adjust the width to make it thinner */
   border-radius: 4px !important; /* Less rounded corners */
-  text-align: right !important; /* Align content to the right */
   padding: 8px !important; /* Adjust padding if needed */
+  margin-left: auto !important; /* Align the search bar to the right */
+  margin-right: 0 !important; /* Ensure it stays aligned to the right */
+  display: block !important; /* Ensure it behaves like a block element for alignment */
 }
