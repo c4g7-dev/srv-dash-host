@@ -3,37 +3,9 @@
     grid-column: auto !important; /* Override the problematic rule */
 }
 
-/* Button Container */
-.button-container {
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 10px !important;
-}
 
-/* General Button Styles */
-.button-container .button {
-    margin: 5px !important;
-    height: 40px !important;
-    width: auto !important;
-}
-
-/* Pull Files Button Fix */
-.pull-file-button {
-    height: 40px !important;
-    width: auto !important;
-    margin-bottom: 5px !important;
-    margin-right: 10px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* New File Button */
-.new-file-button {
-    width: auto !important;
-    margin-left: 10px !important;
+.style-module_3Y7xosru button:first-child {
+	grid-column: auto  !important;
 }
 
 /* Search Bar Styling */
@@ -50,42 +22,9 @@
     font-weight: 400 !important;
     line-height: 1.25rem !important;
     transition: background-color 0.5s !important;
-
-    /* Glow Effect */
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Remove Default Outline on Hover */
 .Input-sc-19rce1w-0.jqTCDz.w-full.mb-4:focus {
     outline: none !important;
-}
-
-/* Search Bar Container */
-.search-bar-container {
-    display: block !important;
-    width: 100% !important;
-    height: 40px !important;
-    margin-top: 5px !important;
-}
-
-/* Mobile View Adjustments */
-@media (max-width: 768px) {
-    .button-container {
-        display: flex !important;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        flex-wrap: wrap !important;
-    }
-
-    .pull-file-button {
-        width: auto !important;
-        margin-bottom: 5px !important;
-        display: inline-flex !important;
-    }
-
-    .search-bar-container {
-        display: block !important;
-        width: 100% !important;
-        margin-top: 5px !important;
-    }
 }
