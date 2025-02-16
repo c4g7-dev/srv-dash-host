@@ -1,20 +1,20 @@
 /* Align buttons to the right on mobile view */
 @media (max-width: 768px) {
   .button-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap; /* Ensure buttons wrap on mobile */
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    flex-wrap: wrap !important; /* Ensure buttons wrap on mobile */
   }
 
   .button-container .button {
-    margin: 5px;
-    height: 40px; /* Set the height of the buttons */
+    margin: 5px !important;
+    height: 40px !important; /* Set the height of the buttons */
   }
 
   .pull-button {
-    height: 40px; /* Make sure pull button is the same height as the others */
-    width: auto; /* Avoid it being stretched */
+    height: 40px !important; /* Make sure pull button is the same height as the others */
+    width: auto !important; /* Avoid it being stretched */
   }
 
   /* Search bar adjustments */
