@@ -1,26 +1,31 @@
-/* General Button Container Styling */
+/* Fix Pull Files Button Misalignment */
+.style-module_3Y7xosru button:first-child {
+    grid-column: auto !important; /* Override the problematic rule */
+}
+
+/* Button Container */
 .button-container {
     display: flex !important;
     justify-content: flex-end !important;
     align-items: center !important;
-    flex-wrap: wrap !important; /* Ensure buttons wrap properly */
+    flex-wrap: wrap !important;
     gap: 10px !important;
 }
 
-/* Button Styles */
+/* General Button Styles */
 .button-container .button {
     margin: 5px !important;
-    height: 40px !important; /* Button height */
-    width: auto !important; /* Prevent full-width stretching */
+    height: 40px !important;
+    width: auto !important;
 }
 
-/* Pull File Button Fix */
+/* Pull Files Button Fix */
 .pull-file-button {
     height: 40px !important;
-    width: auto !important; /* Prevent full width */
+    width: auto !important;
     margin-bottom: 5px !important;
     margin-right: 10px !important;
-    display: inline-flex !important; /* Ensure it aligns properly */
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
@@ -31,31 +36,35 @@
     margin-left: 10px !important;
 }
 
-/* Search Bar Styling (Now applies on ALL screen sizes) */
-.jqTCDz:not([type="checkbox"]):not([type="radio"]) {
+/* Search Bar Styling */
+.Input-sc-19rce1w-0.jqTCDz.w-full.mb-4 {
     background: none !important;
-    background-color: var(--pageSecondary) !important; /* Matching background */
-    border: none !important; /* Removed border effect */
-    width: 100% !important; /* Full width */
-    height: 40px !important; /* Match button height */
-    border-radius: var(--borderRadius) !important; /* Consistent border radius */
-    padding: 8px 12px !important; /* Padding */
-    margin-left: 0 !important; /* Align left */
-    margin-right: 0 !important; /* Align right */
-    display: block !important; /* Ensures proper alignment */
-    color: #fff !important; /* Text color */
-    font-size: 0.875rem !important; /* Font size */
-    font-weight: 400 !important; /* Font weight */
-    line-height: 1.25rem !important; /* Line height */
-    transition: background-color 0.5s, box-shadow 0.5s !important; /* Smooth transition */
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2) !important; /* Soft glow effect */
+    background-color: var(--pageSecondary) !important; /* Match .style-module_1WqkLT9X */
+    border: none !important;
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: var(--borderRadius) !important;
+    padding: 8px 12px !important;
+    color: #fff !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    line-height: 1.25rem !important;
+    transition: background-color 0.5s !important;
+
+    /* Glow Effect */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Remove Default Outline on Hover */
+.Input-sc-19rce1w-0.jqTCDz.w-full.mb-4:focus {
+    outline: none !important;
 }
 
 /* Search Bar Container */
 .search-bar-container {
     display: block !important;
-    width: 100% !important; /* Ensures full width */
-    height: 40px !important; /* Matches button height */
+    width: 100% !important;
+    height: 40px !important;
     margin-top: 5px !important;
 }
 
