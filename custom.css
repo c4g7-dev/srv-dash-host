@@ -1,5 +1,6 @@
-/* Align buttons to the right on mobile view */
+/* Mobile View Adjustments for Button Alignment */
 @media (max-width: 768px) {
+  /* Align buttons to the right and wrap them as needed */
   .button-container {
     display: flex !important;
     justify-content: flex-end !important;
@@ -7,29 +8,67 @@
     flex-wrap: wrap !important; /* Ensure buttons wrap on mobile */
   }
 
+  /* Button Styles */
   .button-container .button {
     margin: 5px !important;
-    height: 40px !important; /* Set the height of the buttons */
+    height: 40px !important; /* Button height */
+    width: auto !important; /* Avoid stretching */
   }
 
+  /* Pull File Button Adjustments */
   .pull-button {
-    height: 40px !important; /* Make sure pull button is the same height as the others */
-    width: auto !important; /* Avoid it being stretched */
+    height: 40px !important;
+    width: auto !important; /* Ensure it's not full-width */
+    margin-bottom: 5px !important;
   }
 
-  /* Search bar adjustments */
+  /* Search Bar Design */
   .jqTCDz:not([type="checkbox"]):not([type="radio"]) {
     background: none !important;
-    background-color: rgba(0, 0, 0, 0) !important;
-    background-color: var(--pageSecondaryActive) !important;
+    background-color: var(--pageSecondary) !important; /* Matching background color */
     border: none !important;
-    width: 100% !important; /* Make search bar full width */
-    height: 40px !important; /* Match the height of the buttons */
-    border-radius: 4px !important; /* Slightly rounded corners */
-    padding: 8px !important; /* Adjust padding for the search bar */
-    margin-left: auto !important; /* Align search bar to the right */
-    margin-right: 0 !important; /* Ensure no space on the right */
-    display: block !important; /* Make it block-level to respect alignment */
-    text-align: left !important; /* Keep text aligned left */
+    width: 100% !important; /* Full width */
+    height: 40px !important; /* Match button height */
+    border-radius: var(--borderRadius) !important; /* Matching border-radius */
+    padding: 8px 12px !important; /* Adjust padding */
+    margin-left: 0 !important; /* Align to the left */
+    margin-right: 0 !important; /* Align to the right */
+    display: block !important; /* Make it block-level for proper alignment */
+    color: #fff !important; /* Text color */
+    font-size: 0.875rem !important; /* Font size */
+    font-weight: 400 !important; /* Font weight */
+    line-height: 1.25rem !important; /* Line height */
+    transition: background-color .5s !important; /* Smooth transition */
+  }
+
+  /* Button Alignment Fix for "New File" and "Pull File" */
+  .button-container .new-file-button,
+  .button-container .pull-file-button {
+    margin-top: 10px !important;
+  }
+
+  /* Adjust New File Button to Align with Pull File Button */
+  .button-container .new-file-button {
+    margin-right: 15px !important;
+  }
+
+  /* Position the search bar where the pull button was */
+  .search-bar-container {
+    display: block !important;
+    width: 100% !important; /* Ensure it takes full width */
+    height: 40px !important; /* Same height as buttons */
+    margin-top: 5px !important;
+  }
+
+  /* Pull file button should not stretch on mobile */
+  .pull-file-button {
+    width: auto !important;
+    margin-right: 10px !important;
+  }
+
+  /* New file button on the same line */
+  .new-file-button {
+    width: auto !important;
+    margin-left: 10px !important;
   }
 }
