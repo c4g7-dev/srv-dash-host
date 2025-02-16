@@ -22,23 +22,31 @@
     margin-bottom: 5px !important;
   }
 
-  /* Search Bar Design */
-  .jqTCDz:not([type="checkbox"]):not([type="radio"]) {
+  /* Search Bar Design - Matching .style-module_1WqkLT9X */
+  .search-bar-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 40px !important; /* Match button height */
+    margin-top: 5px !important;
+    border-radius: var(--borderRadius) !important;
+    background-color: var(--pageSecondary) !important;
+    transition: background-color 0.5s !important;
+  }
+
+  .search-bar-container input {
     background: none !important;
-    background-color: var(--pageSecondary) !important; /* Matching background color */
+    background-color: transparent !important;
     border: none !important;
     width: 100% !important; /* Full width */
-    height: 40px !important; /* Match button height */
-    border-radius: var(--borderRadius) !important; /* Matching border-radius */
-    padding: 8px 12px !important; /* Adjust padding */
-    margin-left: 0 !important; /* Align to the left */
-    margin-right: 0 !important; /* Align to the right */
-    display: block !important; /* Make it block-level for proper alignment */
+    height: 100% !important; /* Match container height */
+    padding: 8px 12px !important;
     color: #fff !important; /* Text color */
-    font-size: 0.875rem !important; /* Font size */
-    font-weight: 400 !important; /* Font weight */
-    line-height: 1.25rem !important; /* Line height */
-    transition: background-color .5s !important; /* Smooth transition */
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    line-height: 1.25rem !important;
+    outline: none !important; /* Remove focus outline */
   }
 
   /* Button Alignment Fix for "New File" and "Pull File" */
@@ -50,14 +58,6 @@
   /* Adjust New File Button to Align with Pull File Button */
   .button-container .new-file-button {
     margin-right: 15px !important;
-  }
-
-  /* Position the search bar where the pull button was */
-  .search-bar-container {
-    display: block !important;
-    width: 100% !important; /* Ensure it takes full width */
-    height: 40px !important; /* Same height as buttons */
-    margin-top: 5px !important;
   }
 
   /* Pull file button should not stretch on mobile */
