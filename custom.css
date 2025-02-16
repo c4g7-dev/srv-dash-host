@@ -1,3 +1,8 @@
+.LoginFormContainer___StyledP-sc-cyh04c-7 {
+    display: none;
+}
+
+
 /* Fix Pull Files Button Misalignment */
 .style-module_3Y7xosru button:first-child {
     grid-column: auto !important; /* Override the problematic rule */
