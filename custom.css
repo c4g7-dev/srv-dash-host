@@ -30,6 +30,9 @@
     transition: background-color 0.5s !important;
 }
 
+.Input-sc-19rce1w-0 {
+    outline: none !important;
+}
 /* Remove Default Outline on Hover */
 .Input-sc-19rce1w-0.jqTCDz.w-full.mb-4:focus {
     outline: none !important;
