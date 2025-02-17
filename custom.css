@@ -30,7 +30,7 @@
     transition: background-color 0.5s !important;
 }
 
-.Input-sc-19rce1w-0 {
+.Input-sc-19rce1w-0:focus {
     outline: none !important;
 }
 /* Remove Default Outline on Hover */
